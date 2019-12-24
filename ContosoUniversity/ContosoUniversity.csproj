@@ -143,9 +143,24 @@
     <Compile Include="Migrations\201912211536298_InitialCreate.designer.cs">
       <DependentUpon>201912211536298_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201912230829397_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\201912230829397_MaxLengthOnNames.designer.cs">
+      <DependentUpon>201912230829397_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912230837498_ColumnFirstName.cs" />
+    <Compile Include="Migrations\201912230837498_ColumnFirstName.designer.cs">
+      <DependentUpon>201912230837498_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912240847234_Chap4.cs" />
+    <Compile Include="Migrations\201912240847234_Chap4.designer.cs">
+      <DependentUpon>201912240847234_Chap4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -212,6 +227,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201912211536298_InitialCreate.resx">
       <DependentUpon>201912211536298_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912230829397_MaxLengthOnNames.resx">
+      <DependentUpon>201912230829397_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912230837498_ColumnFirstName.resx">
+      <DependentUpon>201912230837498_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912240847234_Chap4.resx">
+      <DependentUpon>201912240847234_Chap4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
