@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* info and errors */
+.selectedrow {
+    background-color: #a4d4e6;
+}
+
+.message-info {
+    border: 1px solid;
+    clear: both;
+    padding: 10px 20px;
+}
