@@ -20,10 +20,25 @@ namespace ContosoUniversity.Controllers
         }
 
         // GET: Courses/Details/5
+        //public ActionResult Details(int id)
+        //{
+        //    Course course = unitOfWork.CourseRepository.GetByID(id);
+        //    return View(course);
+        //}
+
         public ActionResult Details(int id)
         {
-            Course course = unitOfWork.CourseRepository.GetByID(id);
-            return View(course);
+            var query = "SELECT * FROM Course WHERE CourseID = @p0";
+            return View(unitOfWork.CourseRepository.GetWithRawSql(query, id).Single());
+        }
+
+        public ActionResult UpdateCourseCredits(double? multiplier)
+        {
+            if (multiplier != null)
+            {
+                ViewBag.RowsAffected = unitOfWork.CourseRepository.UpdateCourseCredits(multiplier.Value);
+            }
+            return View();
         }
 
         public ActionResult Create()

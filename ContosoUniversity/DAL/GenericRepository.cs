@@ -76,5 +76,10 @@ namespace ContosoUniversity.DAL
             _dbSet.Attach(entityToUpdate);
             _context.Entry(entityToUpdate).State = EntityState.Modified;
         }
+
+        public virtual IEnumerable<TEntity> GetWithRawSql(string query, params object[] parameters)
+        {
+            return _dbSet.SqlQuery(query, parameters).ToList();
+        }
     }
 }
