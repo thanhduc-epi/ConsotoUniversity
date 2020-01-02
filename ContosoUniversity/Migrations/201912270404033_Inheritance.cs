@@ -1,8 +1,7 @@
 ﻿namespace ContosoUniversity.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class Inheritance : DbMigration
     {
         public override void Up()
@@ -63,14 +62,14 @@
             CreateTable(
                 "dbo.Student",
                 c => new
-                    {
-                        StudentID = c.Int(nullable: false, identity: true),
-                        LastName = c.String(maxLength: 50),
-                        FirstName = c.String(maxLength: 50),
-                        EnrollmentDate = c.DateTime(nullable: false),
-                    })
+                {
+                    StudentID = c.Int(nullable: false, identity: true),
+                    LastName = c.String(maxLength: 50),
+                    FirstName = c.String(maxLength: 50),
+                    EnrollmentDate = c.DateTime(nullable: false),
+                })
                 .PrimaryKey(t => t.StudentID);
-            
+
             AddColumn("dbo.Person", "InstructorID", c => c.Int(nullable: false, identity: true));
             DropForeignKey("dbo.CourseInstructor", "PersonID", "dbo.Person");
             DropForeignKey("dbo.Enrollment", "PersonID", "dbo.Person");

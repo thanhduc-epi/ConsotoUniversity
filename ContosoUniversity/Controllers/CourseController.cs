@@ -1,9 +1,7 @@
 ﻿using ContosoUniversity.DAL;
 using ContosoUniversity.Models;
 using System.Data;
-using System.Data.Entity;
 using System.Linq;
-using System.Net;
 using System.Web.Mvc;
 
 namespace ContosoUniversity.Controllers

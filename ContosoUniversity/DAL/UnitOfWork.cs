@@ -1,5 +1,5 @@
-﻿using System;
-using ContosoUniversity.Models;
+﻿using ContosoUniversity.Models;
+using System;
 
 namespace ContosoUniversity.DAL
 {

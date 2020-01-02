@@ -1,6 +1,5 @@
 ﻿using ContosoUniversity.DAL;
 using ContosoUniversity.ViewModels;
-using System.Linq;
 using System.Web.Mvc;
 
 namespace ContosoUniversity.Controllers

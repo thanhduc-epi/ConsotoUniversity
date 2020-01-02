@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ContosoUniversity.Models;
+using System;
 using System.Collections.Generic;
-using ContosoUniversity.Models;
 
 namespace ContosoUniversity.DAL
 {
